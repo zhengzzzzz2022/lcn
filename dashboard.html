@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>后台管理</title>
+    <link href="css/cms.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="js/lcn.js" type="text/javascript"></script> -->
+    <script>
+      function dz() {
+        let dzsbq = window.document.getElementById("dzs");
+        let dzs = parseInt(dzsbq.innerText);
+        let dzsnew = dzs + 1;
+        dzsbq.innerText = dzsnew;
+        return;
+      }
+    </script>
+  </head>
+  <body class="flex flex-column">
+    <!-- 头部 -->
+    <div class="box-shadow bg-white" style="height: 80px; z-index: 2"></div>
+    <!-- 下部 -->
+    <div class="flex flex1" style="overflow: auto">
+      <!-- 左侧 -->
+      <div class="bg-white navgroup" style="width: 208px; z-index: 1">
+        <ul>
+          <li>找城市</li>
+          <li>找数据</li>
+          <li>城市图解</li>
+          <li>城市榜单</li>
+        </ul>
+      </div>
+      <!-- 内容区 -->
+      <div class="flex flex1 flex-column mg8 content" style="overflow: auto">
+        <!-- 数据区 -->
+        <div class="flex databox">
+          <!-- 数据块 -->
+          <div class="card-l bg-white flex1 mgr8 box-shadow">11</div>
+          <div class="card-l bg-white flex1 mgr8 box-shadow">11</div>
+          <div class="card-l bg-white flex1 mgr8 box-shadow">11</div>
+          <div class="card-l bg-white flex1 box-shadow">11</div>
+        </div>
+        <!-- 列表区 -->
+        <div class="flex flex-column">
+          <!-- 列表项 -->
+          <button>切换用户</button>
+          <h1>测试</h1>
+          <div class="card-xl bg-white mgt8 box-shadow"></div>
+          <button id="dzs" onclick="dz()">0</button>
+
+          <div class="card-xl bg-white mgt8 box-shadow"></div>
+          <div class="card-xl bg-white mgt8 box-shadow"></div>
+          <div class="card-xl bg-white mgt8 box-shadow"></div>
+          <img src="../img/card_bg_blue.png" alt="test" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/lcn.js" type="text/javascript"></script>
+  </body>
+</html>

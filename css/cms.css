@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f6f6f9;
+}
+
+/* * { border: 1px solid black; } */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex1 {
+  flex: 1;
+  background-color: #f6f6f9;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.card-l {
+  height: 162px;
+  border-radius: 8px;
+}
+
+.card-xl {
+  height: 300px;
+  border-radius: 8px;
+  background-image: url("../img/card_bg_blue.png");
+}
+
+.mg8 {
+  margin: 16px;
+}
+
+.mgr8 {
+  margin-right: 16px;
+}
+
+.mgt8 {
+  margin-top: 16px;
+}
+
+.box-shadow {
+  box-shadow: rgba(242, 242, 242, 0.35) 0px 5px 5px 0px;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+/* 移动端适配 */
+@media (max-width: 800px) {
+  .navgroup {
+    display: none;
+  }
+
+  .databox {
+    flex-direction: column;
+  }
+
+  .card-l {
+    margin: 0 0 16px;
+    flex: auto;
+  }
+}

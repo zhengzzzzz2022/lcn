@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="城市，数据" />
+    <meta name="description" content="一站式的城市数据聚合查询平台" />
+    <title>集城笔记</title>
+    <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/svg_11129_57.60b944b61d2124aa7c9e36b811484278.js"></script>
+    <link href="css/lcn.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/cms.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="icon" href="img/favicon.ico" />
+    <script src="js/lcn.js" type="text/javascript"></script>
+  </head>
+  <body class="flex flex-column">
+    <!-- 头部 -->
+    <div class="header">
+      <div class="header-content">
+        <div id="leftmenu" class="leftmenu">
+          <svg class="iconpark-icon" style="color: #000; margin: 10px">
+            <use href="#hamburger-button"></use>
+          </svg>
+        </div>
+        <a href="#"><img src="img/logo.png" alt="集城笔记" height="48px" /></a>
+        <div style="position: relative">
+          <svg
+            class="iconpark-icon"
+            style="height: 16px; position: absolute; left: 36px; top: 12px"
+          >
+            <use href="#u110"></use>
+          </svg>
+          <input
+            class="search-text"
+            type="text"
+            name="search"
+            placeholder="找城市、查数据"
+          />
+        </div>
+        <p style="margin: 0 0 0 24px">热门：上海 | 苏州 | 杭州 | 南京 | 深圳</p>
+
+        <!-- 右侧部分 -->
+        <div style="margin-left: auto">
+          <svg
+            class="iconpark-icon"
+            style="color: #fe6301; margin-right: 4px; vertical-align: middle"
+          >
+            <use href="#level-5i1p61gd"></use>
+          </svg>
+          <a href="#" style="margin-right: 24px">会员服务</a
+          ><a href="#" style="margin-right: 24px">注册</a
+          ><a href="login.html"
+            ><input
+              class="btn-blue"
+              type="button"
+              value="登录"
+              style="margin-right: 24px"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- 内容区 -->
+    <!-- <div
+      class="flex flex1 flex-column content"
+      style="overflow: auto; background-color: yellow"
+    > -->
+    <!-- 城市摘要信息背景 -->
+    <div class="banner">
+      <div class="banner-bg">
+        <div class="banner-mask"></div>
+      </div>
+      <div class="banner-bottom"></div>
+      <!-- 城市摘要信息 -->
+      <div id="cityinfo" class="city-info">
+        <div id="breadcrumb" class="breadcrumb">
+          <a class="hrefmb" href="#">首页</a><span> / </span>
+          <a class="hrefmb" href="#">找城市</a><span> / </span>
+          <span class="breadcrumb-pre">苏州</span>
+        </div>
+
+        <p class="city-title">苏州</p>
+        <div class="city-tag">
+          <a href="#"><input class="btn-tag" type="button" value="江苏" /></a>
+          <a href="#"><input class="btn-tag" type="button" value="长三角" /></a>
+          <a href="#"><input class="btn-tag" type="button" value="华东" /></a>
+          <a href="#"
+            ><input class="btn-tag" type="button" value="特大城市"
+          /></a>
+          <a href="#"><input class="btn-tag" type="button" value="地级市" /></a>
+        </div>
+        <p class="user-data">查看：13550&nbsp; &nbsp; &nbsp;关注：1258</p>
+        <div style="text-align: center; margin-top: 16px">
+          <a href="#"
+            ><input class="btn-follow" type="button" value="关注"
+          /></a>
+          <a href="#"
+            ><input class="btn-compare" type="button" value="对比"
+          /></a>
+        </div>
+
+        <div class="tj-box-group">
+          <div class="tj-box">
+            <p class="tj-nf">2021年</p>
+            <p class="tj-zb">常住人口数量</p>
+            <div>
+              <span class="tj-sz">1264.25</span>
+              <span class="tj-sd">万人</span>
+            </div>
+            <p class="tj-sd">同比 +1.28%</p>
+          </div>
+          <div class="tj-box">
+            <p class="tj-nf">2021年</p>
+            <p class="tj-zb">地区生产总值(GDP)</p>
+            <div>
+              <span class="tj-sz">22064.25</span>
+              <span class="tj-sd">亿元</span>
+            </div>
+            <p class="tj-sd">同比 +1.28%</p>
+          </div>
+          <div class="tj-box">
+            <p class="tj-nf">2021年</p>
+            <p class="tj-zb">人均GDP</p>
+            <div>
+              <span class="tj-sz">62064.25</span>
+              <span class="tj-sd">元</span>
+            </div>
+            <p class="tj-sd">同比 +1.28%</p>
+          </div>
+          <div class="tj-box">
+            <p class="tj-nf">2021年</p>
+            <p class="tj-zb">人均可支配收入</p>
+            <div>
+              <span class="tj-sz">62064.25</span>
+              <span class="tj-sd">元</span>
+            </div>
+            <p class="tj-sd">同比 +1.28%</p>
+          </div>
+          <div class="tj-box">
+            <p class="tj-nf">2021年</p>
+            <p class="tj-zb">一般预算性收入</p>
+            <div>
+              <span class="tj-sz">2564.25</span>
+              <span class="tj-sd">万人</span>
+            </div>
+            <p class="tj-sd">同比 +1.28%</p>
+          </div>
+        </div>
+        <div class="aboutinfo-group">
+          <div class="aboutinfo-intro">
+            <p class="module-title">概述</p>
+            <p>
+              苏州，是江苏省辖地级市，地处中国华东地区、长三角都市圈，行政区面积8657.32平方公里。
+              2021 年，苏州市有常住人口 1264.25
+              万，同比增长1.28%，地区生产总值（GDP）22.64.25亿元，同比增长7.28%，人均GDP达到62064.25元（21002美元）。<br />
+              中位年龄为 37.2 岁，中位家庭收入为 69,407 元。2018 年至 2019
+              年间，苏州市的人口从 1040 万增长到 1145 万，增长了
+              1.737%，其家庭收入中位数从 63,799 元增长到 69,407 元，增长了
+              8.79%。<br />
+              苏州市最大的大学是苏州大学（2019 年授予17,946
+              个学位）、苏州科技大学（12,920 个学位）和西交利物浦大学（5,832
+              个学位）。<br />
+              <a href="#" class="href-white">查看更多</a>
+            </p>
+          </div>
+          <div class="aboutinfo-under">
+            <p class="module-title">下辖 / 代管（10）</p>
+            <div>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="姑苏区"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="吴中区"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="相城区"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="高新区"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="吴江区"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="常熟市"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="昆山市"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="张家港市"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="太仓市"
+              /></a>
+              <a href="#"
+                ><input class="btn-qx" type="button" value="苏州工业园区"
+              /></a>
+            </div>
+          </div>
+          <div class="aboutinfo-location">
+            <p class="module-title">区位</p>
+            <img src="img/cityLocation_sz.png" class="img-citylocation" />
+          </div>
+        </div>
+
+        <div class="datasoure">
+          数据来源：
+          <a href="#" class="href-gray">政府官网</a><span> 、</span
+          ><a href="#" class="href-gray">地方统计局</a> 、<a
+            href="#"
+            class="href-gray"
+            >官方微信公众号</a
+          >、<a href="#" class="href-gray">官方微博</a> 、<a
+            href="#"
+            class="href-gray"
+            >百度百科</a
+          >
+          、<a href="#" class="href-gray">维基百科</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 数据列表 -->
+    <div id="datalistbg">
+      <!-- 数据主题块 -->
+      <div>
+        <!-- 数据主题标题 -->
+        <div class="datalist-title-group">
+          <div class="datalist-title-icon">
+            <svg class="iconpark-datalist">
+              <use href="#currency"></use>
+            </svg>
+          </div>
+          <span class="datalist-title">宏观经济</span>
+        </div>
+        <hr />
+        <div class="datalist-group">
+          <div class="datalist">
+            <ul class="list-tag">
+              <li class="tag-hot">热</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="tag-new">新</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li><a href="#">地区生产总值</a></li>
+              <li><a href="#">人均地区生产总值</a></li>
+              <li><a href="#">地区生产总值构成</a></li>
+              <li><a href="#">分地区生产总值</a></li>
+              <li><a href="#">固定资产投资完成额</a></li>
+              <li><a href="#">固定资产投资主要类型构成</a></li>
+              <li><a href="#">分产业固定资产投资完成额</a></li>
+              <li><a href="#">房地产开发投资</a></li>
+            </ul>
+          </div>
+          <div class="datalist">
+            <ul>
+              <li><a href="#">一般公共预算收入</a></li>
+              <li><a href="#">区县一般公共预算收入</a></li>
+              <li><a href="#">一般公共预算支出</a></li>
+              <li><a href="#">区县一般公共预算支出</a></li>
+              <li><a href="#">财政收入构成</a></li>
+              <li><a href="#">财政支出构成</a></li>
+              <li><a href="#">金融机构存款余额</a></li>
+              <li><a href="#">金融机构贷款余额</a></li>
+            </ul>
+          </div>
+          <div class="datalist">
+            <ul>
+              <li><a href="#">进出口总额</a></li>
+              <li><a href="#">外贸依存度</a></li>
+              <li><a href="#">分地区进出口总额</a></li>
+              <li><a href="#">分国别/地区进出口总额</a></li>
+              <li><a href="#">实际使用外资</a></li>
+              <li><a href="#">全体常住居民人均可支配收入</a></li>
+              <li><a href="#">社会消费品零售总额</a></li>
+              <li><a href="#">居民消费价格指数</a></li>
+            </ul>
+          </div>
+          <div class="datalist" style="border: 0">
+            <ul>
+              <li><a href="#">分项居民消费价格指数</a></li>
+              <li><a href="#">全社会用电量</a></li>
+              <li><a href="#">规模以上工业企业工业总产值</a></li>
+              <li><a href="#">规上工业企业分行业工业产值</a></li>
+              <li><a href="#">区县规上工业企业主营业务收入</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 数据主题块 -->
+      <div>
+        <div class="datalist-title-group">
+          <div class="datalist-title-icon">
+            <svg class="iconpark-datalist">
+              <use href="#peoples"></use>
+            </svg>
+          </div>
+          <span class="datalist-title">人口发展</span>
+        </div>
+        <hr />
+        <div class="datalist-group">
+          <div class="datalist">
+            <ul>
+              <li><a href="#">常住人口数量</a></li>
+              <li><a href="#">分地区常住人口数量</a></li>
+              <li><a href="#">新增人口数量</a></li>
+              <li><a href="#">分地区新增人口数量</a></li>
+              <li><a href="#">城镇人口比重</a></li>
+              <li><a href="#">人口普查常住人口数量</a></li>
+              <li><a href="#">分地区常住人口数量</a></li>
+            </ul>
+          </div>
+          <div class="datalist">
+            <ul class="list-tag">
+              <li class="tag-hot">热</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="tag-new">新</li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li><a href="#">人口普查男女性别比</a></li>
+              <li><a href="#">分地区男女性别比</a></li>
+              <li><a href="#">人口普查家庭户规模</a></li>
+              <li><a href="#">人口普查年龄结构分布</a></li>
+              <li><a href="#">人口普查1-14岁人口</a></li>
+              <li><a href="#">分地区年龄结构分布</a></li>
+              <li><a href="#">受教育程度人口比重</a></li>
+            </ul>
+          </div>
+          <div class="datalist">
+            <ul>
+              <li><a href="#">分地区受教育程度结构</a></li>
+              <li><a href="#">结婚登记对数</a></li>
+              <li><a href="#">分地区结婚登记对数</a></li>
+              <li><a href="#">离婚登记对数</a></li>
+              <li><a href="#">分地区离婚登记对数</a></li>
+              <li><a href="#">出生人口数量</a></li>
+              <li><a href="#">死亡人口数量</a></li>
+            </ul>
+          </div>
+          <div class="datalist" style="border: 0">
+            <ul>
+              <li><a href="#">人口自然增长率</a></li>
+              <li><a href="#">平均预期寿命</a></li>
+              <li><a href="#">就业人口</a></li>
+              <li><a href="#">各产业就业人口分布</a></li>
+              <li><a href="#">分地区各产业就业人口</a></li>
+              <li><a href="#">城镇登记失业率</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <br style="clear: both" /> -->
+    </div>
+
+    <!-- 推荐相关 -->
+    <div class="recommend">
+      <!-- 标题 -->
+      <div class="sectionTitleGroup">
+        <div class="sectionTitleTag"></div>
+        <span class="sectionTitle"> 相关榜单 </span>
+      </div>
+      <!-- 卡片组 -->
+      <div class="card-group">
+        <div class="rankCard">
+          <p class="rankCardTitle">2021年国内生产总值排名</p>
+          <div class="rankCardContent">
+            <p>赛迪顾问城市经济研究中心</p>
+            <div class="rankCardBottom">
+              <p>2021年12月25日</p>
+              <div class="rankCardUserInfo">
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#preview-open"></use>
+                </svg>
+                <p>15455&nbsp;&nbsp;</p>
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#star"></use>
+                </svg>
+                <p>650</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 分隔符 -->
+        <p class="cardSplit">&nbsp;</p>
+        <div class="rankCard">
+          <p class="rankCardTitle">2021年国内生产总值排名</p>
+          <div class="rankCardContent">
+            <p>赛迪顾问城市经济研究中心</p>
+            <div class="rankCardBottom">
+              <p class="rankCardDate">2021年12月25日</p>
+              <div class="rankCardUserInfo">
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#preview-open"></use>
+                </svg>
+                <p>15455&nbsp;&nbsp;</p>
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#star"></use>
+                </svg>
+                <p>650</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="cardSplit">&nbsp;</p>
+        <div class="rankCard">
+          <p class="rankCardTitle">2021年国内生产总值排名</p>
+          <div class="rankCardContent">
+            <p>赛迪顾问城市经济研究中心</p>
+            <div class="rankCardBottom">
+              <p class="rankCardDate">2021年12月25日</p>
+              <div class="rankCardUserInfo">
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#preview-open"></use>
+                </svg>
+                <p>15455&nbsp;&nbsp;</p>
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#star"></use>
+                </svg>
+                <p>650</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="cardSplit">&nbsp;</p>
+        <div class="rankCard">
+          <p class="rankCardTitle">2021年国内生产总值排名</p>
+          <div class="rankCardContent">
+            <p>赛迪顾问城市经济研究中心</p>
+            <div class="rankCardBottom">
+              <p class="rankCardDate">2021年12月25日</p>
+              <div class="rankCardUserInfo">
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#preview-open"></use>
+                </svg>
+                <p>15455&nbsp;&nbsp;</p>
+                <svg class="iconpark-icon-rankcard">
+                  <use href="#star"></use>
+                </svg>
+                <p>650</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 推广位 -->
+    <div class="ad flex flex-column">
+      <a href="#"
+        ><input class="btn-openVip" type="button" value="开通会员"
+      /></a>
+      <p style="color: black; margin-top: 16px">
+        联系邮箱：vipservice@linkcitynote.com | 联系电话：400-5544-5555
+      </p>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="footer-content">
+        <img src="img/logo.png" alt="集城笔记" height="92px" />
+        <p style="line-height: 32px; margin-left: 24px">
+          地址：苏州市工业园区展业路18号展业大厦B317室<br />
+          邮箱：service@linkcitynote.com<br />电话：13500005301
+        </p>
+        <div class="footer-qrcode">
+          <div style="margin-left: 24px">
+            <img src="img/qrCode_weichat.png" alt="微信公众号" class="qrcode" />
+            <p style="text-align: center; margin-top: 4px">微信公众号</p>
+          </div>
+          <div style="margin-left: 24px">
+            <img src="img/qrCode_weibo.png" alt="微博" class="qrcode" />
+            <p style="text-align: center; margin-top: 4px">微博</p>
+          </div>
+        </div>
+      </div>
+      <hr
+        style="
+          border: none;
+          height: 1px;
+          background-color: #d7d7d7;
+          width: 1200px;
+        "
+      />
+      <div class="footer-copyright">
+        <span>
+          © 2021 苏州集城笔记信息科技有限公司 All rights reserved
+          苏ICP备19016725号
+        </span>
+        <div style="margin-left: auto">
+          <a href="#" style="margin-left: 8px">关于我们</a>
+          <a href="#" style="margin-left: 8px">隐私政策</a>
+          <a href="#" style="margin-left: 8px">用户协议</a
+          ><a href="#" style="margin-left: 8px">付费服务协议</a>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
